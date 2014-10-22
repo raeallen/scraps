@@ -1,0 +1,84 @@
+<!--snippet of code for main index component for an rss file in wallace-->
+
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+
+<channel>
+
+<title>612 ABC Brisbane on demand downloads</title>
+
+<category>Australian Broadcasting Corporation: All content</category>
+<link>http://www.abc.net.au/brisbane/</link>
+
+<description>
+<![CDATA[
+612 ABC Brisbane programs and segments available for download on demand.
+]]>
+</description>
+
+<language>en-AU</language>
+
+<copyright>
+Copyright 2014, Australian Broadcasting Corporation. All Rights Reserved.
+</copyright>
+
+<pubDate>??TxDateRFC822??</pubDate>
+
+<lastBuildDate>??TxDateRFC822??</lastBuildDate>
+
+<docs>http://www.abc.net.au/brisbane/</docs>
+
+<managingEditor>localfeedback@abc.net.au</managingEditor>
+
++ForEachCategory+
++ForEachCategory+
+    </channel>
+ 		</rss>
+
+
+<!--sub index snippett-->
+
++ForEachItem+
+<item>
+            <title><![CDATA[??Title??]]></title>
+            <description>
+                <![CDATA[??Description??]]>
+            </description>
+            <media:description>
+             <![CDATA[??Description??]]>
+            </media:description>
+            <link>??PublishURL??</link>
+            <dc:creator>??Reporter??</dc:creator>
+            <pubDate>??TxDateRFC822??</pubDate>
+            <guid>??PublishURL??</guid>
+            <source url="??ProgramURL??">??ProgramName??</source>
+~~Subjects1<category>??Subjects1??</category>Subjects1~~
+~~Subjects2<category>??Subjects2??</category>Subjects2~~
+~~Subjects3<category>??Subjects3??</category>Subjects3~~
+~~Subjects4<category>??Subjects4??</category>Subjects4~~
+
+++RelatedAudio_1_1++++AudioVersion++
+                <media:content url="??PublishURL??" type="??ContentType??" medium="audio" duration="??TotalDuration??" bitrate="??AverageBitRate??" isDefault="true" length="??FileSize??" />++AudioVersion++++RelatedAudio_1_1++            
+
+
+            <media:group>
+++RelatedImage_1_1++
+++ImageVersion++
+                <media:content url="??PublishURL??" medium="image" type="image/jpeg" width="??Width??" height="??Height??"  isDefault="true"/>
+++ImageVersion++
+++RelatedImage_1_1++
+++RelatedImage_1_1++
+++ImageVersion_100x100jpg++
+                <media:thumbnail url="??PublishURL??" medium="image" type="??ContentType??" width="??Width??" height="??Height??" />
+++ImageVersion_100x100jpg++
+++RelatedImage_1_1++
+            </media:group>
+            <media:credit role="presenter" scheme="urn:ebu">??Reporter??</media:credit>
+            <dc:valid>
+                start=2014-10-16T22:00+11:00;
+                end=2014-10-23T22:00+11:00;
+                scheme=W3C-DTF
+            </dc:valid>
+        </item>
++ForEachItem+
+
+

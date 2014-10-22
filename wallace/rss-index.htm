@@ -1,0 +1,55 @@
+<!--snippet of code for main index component for an rss file in wallace-->
+
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<channel>
+<title>Sunday Profile with Julia Baird</title>
+<link>http://www.abc.net.au/sundayprofile/</link>
+<language>en-us</language>
+<image>
+<title>Sunday Profile with Julia Baird</title>
+<link>http://www.abc.net.au/sundayprofile/</link>
+<url>http://www.abc.net.au/local/nlr/images/podcast_icons/pod_sunday_profile_small.jpg</url>
+</image>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<description>Sunday Profile offers an in-depth analysis with the decision makers and agenda setters, politicians and business leaders</description>
+<pubDate>??PublishDateTimeRFC822??</pubDate>
+<lastBuildDate>??TxDateRFC822??</lastBuildDate>
+<copyright>Copyright ??ThisYear?? Australian Broadcasting Corporation</copyright>
+<managingEditor>backyard@your.abc.net.au(Sunday Profile)</managingEditor>
+<webMaster>backyard@your.abc.net.au(Sunday Profile)</webMaster>
+<itunes:subtitle>Sunday Profile with Julia Baird</itunes:subtitle>
+<itunes:author>ABC Local Radio</itunes:author>
+<itunes:summary>Sunday Profile offers an in-depth analysis with the decision makers and agenda setters, politicians and business leaders.</itunes:summary>
+<itunes:owner>
+	<itunes:name>ABC Local Radio</itunes:name>
+        <itunes:email>backyard@your.abc.net.au</itunes:email>
+
+</itunes:owner>
+<itunes:image href="http://www.abc.net.au/local/nlr/images/podcast_icons/pod_sunday_profile.jpg" />
+<itunes:category text="News &amp; Politics">
+</itunes:category>
+<itunes:explicit>no</itunes:explicit>
+<atom:link href="http://www.abc.net.au/sundayprofile/features/rsssundayprofile.xml" rel="self" type="application/rss+xml" />
++ForEachCategory+
++ForEachCategory+
+</channel>
+</rss>
+
+<!--sub index snippett-->
+
++ForEachItem+
+<item>
+<title>??Title?? - ??TxDate??</title>
+<description>?#Description#?</description>
+<link>?#PublishURL#?</link>
+<guid>?#PublishURL#?</guid>
+<author>backyard@your.abc.net.au (ABC Local Radio)</author>
+<enclosure url="++RelatedAudio++++AudioVersion_20mp3++??PublishURL??++AudioVersion_20mp3++++RelatedAudio++" length="10000000" type="audio/mpeg" /><pubDate>??TxDateTimeRFC822??</pubDate>
+<itunes:author>ABC Local Radio</itunes:author>
+<itunes:subtitle><![CDATA[??Title??]]></itunes:subtitle>
+<itunes:summary><![CDATA[??ShortDescription??]]></itunes:summary>
+<itunes:duration>52:00</itunes:duration>
+~~Keywords<itunes:keywords>??Keywords??</itunes:keywords>Keywords~~
+</item>
++ForEachItem+
