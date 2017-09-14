@@ -1,0 +1,18 @@
+'''htm
+<!--You can use SSI to select a specific day, and then carry out an action. You can also determine that action to be carried out at a certain time on that day-->
+
+<!--First configure the time format to the day of the year-->
+<!–-#config timefmt="%j"-->
+
+<!--Then use an SSI to select a specific day-->
+<!–-#if expr="($DATE_LOCAL = /75/)"-->
+<!--This will select the 15 March in 2012-->
+
+<!--You can use SSI to select a number of days-->
+<!--#if expr="($DATE_LOCAL = /75/)||($DATE_LOCAL = /76/)||($DATE_LOCAL = /77/)||($DATE_LOCAL = /78/)||($DATE_LOCAL = /79/)||($DATE_LOCAL = /80/)||($DATE_LOCAL = /81/)"-->
+<!--This will select from day 75 through to day 81-->
+
+<!--You can also select a specific time within this day-->
+<!--#if expr="${DATE_LOCAL} = /296/"-->
+<!--#if expr="((${DATE_LOCAL} > 2961659) && (${DATE_LOCAL} < 2961901))"-–>
+<!--This will look at day number 296, and then carry out the command for the time from 1659 local time to 1901 local time based on the server.-->
